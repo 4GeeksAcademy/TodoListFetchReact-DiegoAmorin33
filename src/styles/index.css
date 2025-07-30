@@ -1,11 +1,111 @@
-/* 
+.barra-inferior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.stacked-card {
+  position: relative;
+  width: 300px;
+  margin: 50px auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 
-*/
+.card-shadow {
+  position: absolute;
+  background: white;
+  border-radius: 4px;
+  border: 1px solid #444;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.shadow1 {
+  top: 16px;
+  left: 16px;
+  width: 92%;
+  height: 92%;
+}
+
+.shadow2 {
+  top: 8px;
+  left: 8px;
+  width: 96%;
+  height: 96%;
+}
+
+.main-card {
+  position: relative;
+  background: white;
+  border-radius: 4px;
+  border: 1px solid #c7c7c7;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.tarea-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+  transition: background 0.2s;
+}
+
+.tarea-item:hover {
+  background: #f9f9f9;
+}
+
+.boton-eliminar {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 16px;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.tarea-item:hover .boton-eliminar {
+  visibility: visible;
+}
+
+.count {
+  font-size: 12px;
+  color: #888;
+  margin: 0;
+}
+
+.boton-limpiar {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.boton-limpiar:hover {
+  background: #e60000;
+}
